@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "#";
+const prefix = "-";
 /////////////////////////
 ////////////////////////
 
@@ -43,7 +43,7 @@ client.on('message', async msg =>{
     msg.channel.send(embed);
     }
 });
-const adminprefix = "#";
+const adminprefix = "-";
 const devs = ['400250690284421120'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
